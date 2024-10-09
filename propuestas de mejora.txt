@@ -1,0 +1,6 @@
+Idiomas
+error al acceder con el usuario incorrecto
+añadir favoritos al buscar
+añadir recomendaciones por género (debajo de media actual)
+error 404
+saltar al siguiente episodio

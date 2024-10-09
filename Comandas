@@ -1,0 +1,24 @@
+- CONTENEDOR MYSQL
+mysql -u root -p
+password = password
+USE tutorial;
+
+COMANDOS:SHOW DATABASES, DESCRIBE > tabla
+
+-Refrescar migrate y seed y GENERAR REGISTROS EN LA BD - SEEDER
+
+./vendor/bin/sail php artisan migrate:fresh --seed
+
+./vendor/bin/sail php artisan db:seed --class=UserSeeder
+./vendor/bin/sail php artisan db:seed --class=MediaSeeder
+./vendor/bin/sail php artisan db:seed --class=EpisodeSeeder
+
+- LINKEAR LA CARPETA public/storage
+./vendor/bin/sail php artisan storage:link
+   INFO  The [public/storage] link has been connected to [storage/app/public].  
+
+- CREAR CONTROLLADOR
+./vendor/bin/sail php artisan make:controller MediaController
+
+
+-- Añadir vista previa poster en formulario addMovie
